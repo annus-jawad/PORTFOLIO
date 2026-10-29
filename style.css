@@ -225,3 +225,46 @@ h1{font-size:clamp(42px,5.5vw,70px);letter-spacing:-3.8px;line-height:1.12;font-
   .hero-visual { min-height: 230px; }
   .main-nav.open { max-height: calc(100dvh - 75px); overflow-y: auto; }
 }
+/* Fix hero metadata and bottom-line overlap */
+.hero {
+  position: relative;
+}
+
+.hero-meta {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px 40px;
+}
+
+.hero-meta > div {
+  min-width: 0;
+}
+
+.hero-meta strong {
+  line-height: 1.6;
+}
+
+.hero-bottomline {
+  z-index: 1;
+}
+
+@media (max-width: 540px) {
+  .hero-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 12px;
+  }
+
+  .hero-meta strong {
+    overflow-wrap: anywhere;
+  }
+
+  .hero-bottomline {
+    position: absolute;
+    bottom: 20px;
+    font-size: 8px;
+  }
+}
