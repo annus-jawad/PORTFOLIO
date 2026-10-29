@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annus Jawad | SOC Analyst Project Hub</title>
+<meta name="description" content="Hands-on SOC, detection and blue-team projects by Annus Jawad.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">annus<span>@soc</span>:~$</a>
+  <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#projects">Projects</a><a href="#learning">Learning</a>
+    <a href="#certs">Certifications</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow"><i class="dot"></i> Open to SOC Analyst (L1) roles</p>
+      <h1>Annus Jawad</h1>
+      <h2>SOC Analyst <em>|</em> Security Operations &amp; Threat Detection</h2>
+      <p class="lead">Software engineer turned blue-teamer. I build SIEM labs, write detection rules and investigate incidents, then document the evidence. This site is the proof behind the CV.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="https://github.com/annus-jawad" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/annus-jawad/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://tryhackme.com/p/annusjawadofficial" target="_blank" rel="noopener">TryHackMe</a>
+      </div>
+    </div>
+    <div class="term" aria-hidden="true">
+      <div class="bar"><i></i><i></i><i></i><span>detection-pipeline.log</span></div>
+      <pre id="typed"></pre>
+    </div>
+  </div>
+  <div class="wrap stats" id="stats"></div>
+</section>
+
+<section id="projects" class="wrap">
+  <h3 class="sec"><span>01</span> Projects</h3>
+  <p class="sub">Twelve hands-on projects across detection engineering, SIEM, network monitoring, forensics, threat intelligence and automation. Click any card for the full case study.</p>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="projGrid"></div>
+</section>
+
+<section id="learning" class="wrap">
+  <h3 class="sec"><span>02</span> Practical Learning</h3>
+  <p class="sub">Hands-on labs and guided paths. These are practice, not certifications.</p>
+  <div class="grid two" id="learnGrid"></div>
+</section>
+
+<section id="certs" class="wrap">
+  <h3 class="sec"><span>03</span> Certifications</h3>
+  <div class="grid two" id="certGrid"></div>
+</section>
+
+<section id="about" class="wrap">
+  <h3 class="sec"><span>04</span> About</h3>
+  <div class="about">
+    <p>I came into security from software engineering, and I still approach it like an engineer: build the thing, break it, then measure whether the detection actually works. I learn best on real traffic and real logs, which is why most of my projects run on live labs rather than slides.</p>
+    <p>Right now I am going deeper on <b>log analysis, detection rules and incident investigation</b> using Wazuh, Sysmon, Suricata, Zeek and Wireshark, and exploring where automation (n8n and AI classification) helps a SOC and where a human must still decide.</p>
+    <p>My goal is to grow as a SOC analyst, starting with alert triage and incident response, then move into <b>detection engineering</b>.</p>
+  </div>
+</section>
+
+<section id="contact" class="wrap">
+  <h3 class="sec"><span>05</span> Contact</h3>
+  <p class="sub">Hiring for a SOC or blue-team role, or want to talk detections? Get in touch.</p>
+  <div class="grid three">
+    <a class="card link" href="mailto:jawadannus@gmail.com"><b>Email</b><span>jawadannus@gmail.com</span></a>
+    <a class="card link" href="https://www.linkedin.com/in/annus-jawad/" target="_blank" rel="noopener"><b>LinkedIn</b><span>linkedin.com/in/annus-jawad</span></a>
+    <a class="card link" href="https://github.com/annus-jawad" target="_blank" rel="noopener"><b>GitHub</b><span>github.com/annus-jawad</span></a>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Annus Jawad · Built with plain HTML, CSS and JS</div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+  <div class="panel"><button class="close" id="mClose" aria-label="Close">✕</button><div id="mBody"></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
