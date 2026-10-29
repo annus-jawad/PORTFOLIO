@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d14">
+  <meta name="description" content="Annus Jawad's cybersecurity project hub: detection engineering, SIEM, network monitoring, digital forensics, and SOC automation.">
+  <title>Annus Jawad | Security Operations & Detection Engineering</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Annus Jawad home">
+      <span class="brand-mark">AJ<span>_</span></span>
+      <span class="brand-copy"><strong>ANNUS JAWAD</strong><small>SECURITY PROJECTS</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#projects">Projects <span>12</span></a>
+      <a href="#learning">Practical learning</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#about">About</a>
+      <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> SECURITY OPERATIONS / DETECTION</div>
+        <h1>Turning security<br>telemetry into <span class="gradient-text">answers.</span></h1>
+        <p class="hero-intro">I'm Annus Jawad, a software engineering graduate building practical SOC, SIEM, and detection engineering skills through hands-on labs and investigations.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span>↓</span></a>
+          <a class="button button-secondary" href="https://github.com/annus-jawad" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+          <a class="button button-secondary" href="https://linkedin.com/in/annus-jawad" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><span class="meta-label">FOCUS</span><strong>Detection · Triage · SIEM</strong></div>
+          <div><span class="meta-label">APPROACH</span><strong>Build · Test · Investigate</strong></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative security telemetry panel">
+        <div class="visual-top"><span><i></i> LAB / TELEMETRY</span><span>LOCAL ENVIRONMENT</span></div>
+        <div class="visual-code">
+          <div class="code-line"><span class="line-no">01</span><span class="code-muted">$</span> tail -f /var/ossec/logs/alerts/alerts.json</div>
+          <div class="code-line"><span class="line-no">02</span><span class="code-green">event</span>: <span class="code-white">authentication_failure</span></div>
+          <div class="code-line"><span class="line-no">03</span><span class="code-green">rule.id</span>: <span class="code-yellow">100020</span></div>
+          <div class="code-line"><span class="line-no">04</span><span class="code-green">technique</span>: <span class="code-white">T1110 · Brute Force</span></div>
+          <div class="code-line"><span class="line-no">05</span><span class="code-green">pipeline</span>: <span class="code-white">collect → decode → alert</span></div>
+          <div class="code-line"><span class="line-no">06</span><span class="code-green">status</span>: <span class="code-live">● TESTED IN LAB</span></div>
+          <div class="cursor-line"><span></span></div>
+        </div>
+        <div class="visual-bottom"><span>WAZUH / OPENWRT</span><span>DETECTION LAB <b>●</b></span></div>
+        <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+      </div>
+      <div class="hero-bottomline"><span>INDEPENDENT SECURITY LABS</span><span>01 — 12 / PROJECT INDEX</span></div>
+    </section>
+
+    <section class="section-wrap project-section" id="projects">
+      <div class="section-heading">
+        <div><div class="eyebrow">FIELD NOTES / BUILT AND TESTED</div><h2>Project <span class="gradient-text">archive</span></h2></div>
+        <p>Practical investigations, detection experiments, and small systems built to understand how security tools behave beyond the documentation.</p>
+      </div>
+      <div class="project-toolbar">
+        <div class="filter-list" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All projects <span>12</span></button>
+          <button class="filter-btn" data-filter="detection" aria-pressed="false">Detection & SIEM</button>
+          <button class="filter-btn" data-filter="network" aria-pressed="false">Network analysis</button>
+          <button class="filter-btn" data-filter="forensics" aria-pressed="false">Forensics & intel</button>
+          <button class="filter-btn" data-filter="automation" aria-pressed="false">Automation & data</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="project-search" type="search" placeholder="Search projects…" aria-label="Search projects"></label>
+      </div>
+      <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>No projects match that search. Try another term or category.</p>
+    </section>
+
+    <section class="learning-section" id="learning">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow">PRACTICE / CONTINUOUS LEARNING</div><h2>Practical <span class="gradient-text">learning</span></h2></div>
+          <p>Completed learning paths and tool-focused coursework are kept separate from formal certifications.</p>
+        </div>
+        <div class="learning-grid">
+          <article class="learning-card">
+            <div class="learning-icon">01</div><div class="learning-type">LETSDEFEND · COMPLETED</div>
+            <h3>SIEM Engineer Career Path</h3>
+            <p>SIEM setup, log collection, normalization and parsing, detection engineering, packet analysis, IOC extraction, and alert tuning across Splunk and Wazuh.</p>
+            <a class="text-link" href="https://app.letsdefend.io//my-rewards/detail/4e2b3f4a-5d2d-42df-86d4-53a8ff1871fd" target="_blank" rel="noopener noreferrer">Course completion ↗</a>
+          </article>
+          <article class="learning-card">
+            <div class="learning-icon">02</div><div class="learning-type">LETSDEFEND · COMPLETED</div>
+            <h3>Wazuh</h3>
+            <p>Wazuh SIEM architecture, host-based intrusion detection, agent deployment, log ingestion pipelines, and custom alert rule authoring.</p>
+            <a class="text-link" href="https://app.letsdefend.io//my-rewards/detail/efc239966b914c5ca8f7bfe53ce84f38" target="_blank" rel="noopener noreferrer">Course completion ↗</a>
+          </article>
+          <article class="learning-card">
+            <div class="learning-icon">03</div><div class="learning-type">LETSDEFEND · COMPLETED</div>
+            <h3>Splunk Engineer</h3>
+            <p>Splunk Enterprise, Search Processing Language (SPL), log normalization, security telemetry analysis, and event correlation.</p>
+            <a class="text-link" href="https://app.letsdefend.io//my-rewards/detail/55817f8998594c5596ed2f99807ab86a" target="_blank" rel="noopener noreferrer">Course completion ↗</a>
+          </article>
+          <article class="learning-card">
+            <div class="learning-icon">04</div><div class="learning-type">LETSDEFEND · COMPLETED</div>
+            <h3>SIEM 101</h3>
+            <p>SIEM fundamentals, the log lifecycle, data parsing, and alert triage in a Security Operations Center context.</p>
+            <a class="text-link" href="https://app.letsdefend.io//my-rewards/detail/2afbd3eede7944a68fefc146fa7f6fe1" target="_blank" rel="noopener noreferrer">Course completion ↗</a>
+          </article>
+        </div>
+        <div class="learning-footnote"><span class="status-dot"></span> Learning paths are presented as practical learning, not as professional certifications. No room counts are claimed.</div>
+      </div>
+    </section>
+
+    <section class="section-wrap certification-section" id="certifications">
+      <div class="section-heading">
+        <div><div class="eyebrow">FOUNDATIONS / VERIFIED DETAILS</div><h2>Certifications & <span class="gradient-text">training</span></h2></div>
+        <p>Credentials support the work; the projects remain the primary evidence of applied skills.</p>
+      </div>
+      <div class="credential-list">
+        <article class="credential-row featured-credential">
+          <div class="credential-symbol">✓</div><div class="credential-main"><h3>CompTIA Security+</h3><p>Security operations, threat detection and analysis, network security, incident response, and risk management.</p></div><div class="credential-status">CERTIFIED</div>
+          <a class="credential-link" href="https://www.credly.com/badges/ddad0bc7-47b2-43d0-93e9-e0e15afc615c/" target="_blank" rel="noopener noreferrer">Credential ↗</a>
+        </article>
+        <article class="credential-row">
+          <div class="credential-symbol">02</div><div class="credential-main"><h3>Web Pentesting Workshop</h3><p>Everhack · Web application assessment, penetration testing methodology, OWASP Top 10, and offensive security analysis.</p><small>Certificate ID: b26542a6-fe42-4d1c-8f05-53e7b2aa740d</small></div><div class="credential-status">COMPLETED</div>
+        </article>
+        <article class="credential-row">
+          <div class="credential-symbol">03</div><div class="credential-main"><h3>Cyber Security (CEH & CHFI Training)</h3><p>NAVTTC · Ethical hacking principles, defensive security, computer hacking forensic investigation, and incident handling.</p><small>Certificate ID: k-25-918090</small></div><div class="credential-status">COMPLETED</div>
+        </article>
+        <article class="credential-row">
+          <div class="credential-symbol">04</div><div class="credential-main"><h3>Networking Basics</h3><p>Cisco Networking Academy · Network fundamentals, OSI/TCP-IP models, IP, TCP, UDP, DNS, HTTP, and routing/switching.</p></div><div class="credential-status">COMPLETED</div>
+        </article>
+        <article class="credential-row">
+          <div class="credential-symbol">05</div><div class="credential-main"><h3>Crash Course on Python</h3><p>Google · Python fundamentals, data structures, automation scripting, string parsing, and algorithmic logic.</p><small>Coursera Certificate ID: KQBJF5TEFJ9F</small></div><div class="credential-status">COMPLETED</div>
+        </article>
+      </div>
+      <p class="section-note">Only the CompTIA Security+ credential has a direct verification link in the supplied document. Certificate IDs are shown as text, not as invented links.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section-wrap about-layout">
+        <div><div class="eyebrow">ABOUT / WORKING METHOD</div><h2>Curiosity is useful.<br><span class="gradient-text">Evidence is better.</span></h2></div>
+        <div class="about-copy">
+          <p>I’m a software engineering graduate moving toward security operations, with a particular interest in how raw telemetry becomes a useful detection—and how an analyst can verify what an alert actually means.</p>
+          <p>My projects move between SIEM engineering, endpoint visibility, packet analysis, threat intelligence, digital forensics, and response automation. I like building the lab, generating controlled test activity, following the evidence across tools, and documenting what worked, what failed, and why.</p>
+          <p>My current direction is SOC analysis and incident triage, with a longer-term interest in detection engineering. I aim to keep claims tied to observable results rather than treating a configured tool as proof that a control works.</p>
+          <div class="skill-tags"><span>Wazuh</span><span>Sysmon</span><span>Suricata</span><span>Zeek</span><span>Wireshark</span><span>Python</span><span>MITRE ATT&CK</span><span>Incident triage</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap contact-section" id="contact">
+      <div class="contact-panel">
+        <div class="contact-copy"><div class="eyebrow">CONTACT / COLLABORATION</div><h2>Let's talk about<br><span class="gradient-text">security work.</span></h2><p>For security operations, detection engineering, or project discussions, reach me through the links below.</p></div>
+        <div class="contact-links">
+          <a href="mailto:jawadannus@gmail.com"><span>Email</span><strong>jawadannus@gmail.com</strong><b>↗</b></a>
+          <a href="https://github.com/annus-jawad" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>annus-jawad</strong><b>↗</b></a>
+          <a href="https://linkedin.com/in/annus-jawad" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>annus-jawad</strong><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><a class="footer-brand" href="#home">AJ<span>_</span></a><span>Built as a project hub, not a résumé.</span><a href="#home">Back to top ↑</a></footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><span class="dialog-kicker"><span class="status-dot"></span> PROJECT FIELD NOTE</span><button class="dialog-close" id="dialog-close" aria-label="Close project details">×</button></div>
+    <div id="dialog-content"></div>
+  </dialog>
+  <div class="dialog-backdrop" id="dialog-backdrop" hidden></div>
+</body>
+</html>
